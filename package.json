@@ -1,0 +1,12 @@
+{
+  "name": "what",
+  "version": "1.0.0",
+  "description": "what",
+  "type" :"module",
+  "scripts": {
+    "?": "node index.js"
+  },
+  "keywords": ["what"],
+  "author": "XunJiJiang",
+  "license": "MIT"
+}
