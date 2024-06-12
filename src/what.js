@@ -9,11 +9,10 @@ function getHandler(values) {
       get: getHandler(values),
       apply(_, __, receiver) {
         if (receiver[0] in oldConsole) {
-          oldConsole[receiver[0]](...values);
+          return oldConsole[receiver[0]](...values);
         } else {
-          oldConsole.log(...values);
+          return oldConsole.log(values.join(receiver[0].toString()));
         }
-        return 'what';
       },
     });
   }
@@ -30,11 +29,10 @@ const _console = new Proxy(oldConsole, {
       get: getHandler(values),
       apply(_, __, receiver) {
         if (receiver[0] in oldConsole) {
-          oldConsole[receiver[0]](...values);
+          return oldConsole[receiver[0]](...values);
         } else {
-          oldConsole.log(...values);
+          return oldConsole.log(values.join(receiver[0].toString()));
         }
-        return 'what';
       },
     });
   },
