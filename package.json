@@ -1,12 +1,15 @@
 {
-  "name": "what",
+  "name": "just-console",
   "version": "1.0.0",
-  "description": "what",
-  "type" :"module",
-  "scripts": {
-    "?": "node index.js"
-  },
-  "keywords": ["what"],
+  "description": "new console? what?",
   "author": "XunJiJiang",
+  "type" :"module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XunJiJiang/just-console"
+  },
+  "bugs": "https://github.com/XunJiJiang/just-console/issues",
+  "keywords": ["console"],
   "license": "MIT"
 }
